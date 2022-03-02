@@ -111,11 +111,11 @@ informations pertinentes et décrivez les distributions.}
          \end{center}
       On peut voir que la moyen de DCP des classes qui ont été modifiées 
       moins de 10 fois est plus grand que celles qui ont été modifiées plus de 10 fois. \\
-      Donc l’hypothèse pour ce cas n'est pas vrais.\\
+      Donc l’hypothèse pour ce cas n'est pas vraie.\\
       
       la nombre de classes dans groupe de moins de 10 fois est 524. \\
       la nombre de classes dans groupe de plus de 10 fois est 138. \\
-      Tous les deux groupes sont suffisamment grand (>30) donc comparer la moyen de DCP est bon. 
+      Tous les deux groupes sont suffisamment grands (>30) donc comparer la moyenne de DCP est bon. 
    
       }
    
@@ -135,7 +135,21 @@ informations pertinentes et décrivez les distributions.}
    l'ensemble de données. }
    
    \answer{
-      TODO:
+      \begin{center}
+         \includegraphics[width=1\columnwidth]{T3.png}
+         \end{center}
+         La corrélation entre NCLOC et WMC:\\
+         On peut voir que la corrélation est forte,linéaire et positive, 
+         il n’y pas de point de biais, car plus de code de logique, plus de complexité.\\
+         
+         La corrélation entre DCP et WMC:\\
+         La corrélation est négative, mais pas si forte, car il y a beaucoup de points de biais, donc la corrélation n’est pas significativement  linéaire.
+         La raison est que DCP est en pourcentage.\\
+
+         La corrélation entre NOCom et WMC:\\
+         On peut voir que la corrélation est forte,linéaire et positive, 
+         il y a quelques points de biais, mais la  plupart est autour de la droite, 
+         car plus de code de logique sont ajoutés, plus de complexité.\\
    }
 \end{question}
 

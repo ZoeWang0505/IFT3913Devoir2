@@ -25,3 +25,24 @@ plot(data2.plus$NOCom, data2.plus$DCP, ylab = "DCP", xlab ="NoCom", main = "modi
 abline(h=mean(data2.plus$DCP))
 plot(data2.moin$NOCom, data2.moin$DCP, ylab = "DCP", xlab ="NoCom", main = "modifiées moins de 10 fois")
 abline(h=mean(data2.moin$DCP))
+
+#T3 Étudier les corrélations entre NCLOC et WMC, DCP et WMC, NOCom et WMC. Visualisez les
+#données, les droits de régression, etc.
+par(mfrow=c(1,3))
+lm(data$WMC~data$NCLOC)
+plot(data$NCLOC, data$WMC, xlab = "NCLOC", ylab = "WMC", main = "corrélation entre NCLOC et WMC")
+abline(2.4864, 0.2504 )
+
+lm(data$WMC~data$DCP)
+plot(data$DCP, data$WMC, xlab = "DCP", ylab = "WMC", main = "corrélation entre DCP et WMC")
+abline(126.477, -1.381 )
+
+lm(data$WMC~data$NOCom)
+plot(data$NOCom, data$WMC, xlab = "NoCom", ylab = "WMC", main = "corrélation entre NoCom et WMC")
+abline(-20.008, 8.724 )
+
+
+
+
+
+
