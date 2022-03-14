@@ -65,21 +65,21 @@ informations pertinentes et décrivez les distributions.}
 
    Pour chaque métrique:\\
    NCLOC : nombre de lignes de code qui ne sont pas ni vides ni commentaires \\
-   On peut voir qu'il y a beaucoup de points au-dehors de la max (Potential Outliers). 
-   Donc la distributions est asymitique à gauche.\\
+   On peut voir qu'il y a beaucoup de points en-dehors du maximum (Potential Outliers). 
+   Donc la distributions est asymétrique à gauche.\\
    
    DCP : densité de commentaires (CLOC/LOC) donnée en pourcentage \\
-   DCP est un métrique en pourcentage, donc il est le plus équilibré.
-   La médiane est entre 50\% à 60\%, et il y a pas de outliers.  \\
+   DCP est un métrique en pourcentage, donc elle est le plus équilibrée.
+   La médiane est entre 50\% à 60\%, et il n'y a pas de outliers.  \\
 
    NOCom : nombre de commits (combien de fois la classe a été changée) dans l’historique git de la classe \\
-   On peut voir qu'il y a beaucoup de points au-dehors de la max (Potential Outliers). 
-   Donc la distributions est asymitique à gauche.\\
+   On peut voir qu'il y a beaucoup de points en-dehors du maximum (Potential Outliers). 
+   Donc la distributions est asymétrique à gauche.\\
 
 
    WMC : la métrique de complexité Weighed Methods per Class
-   On peut voir qu'il y a beaucoup de points au-dehors de la max (Potential Outliers). 
-   Donc la distributions est asymitique à gauche.\\
+   On peut voir qu'il y a beaucoup de points en-dehors du maximum (Potential Outliers). 
+   Donc la distributions est asymétrique à gauche.\\
 }
 
  
@@ -98,9 +98,9 @@ informations pertinentes et décrivez les distributions.}
    à la validité).}
    
    \answer{
-      Ici on va évaluer sur l'échantillon de données pour project jfreechart,
+      Ici on va évaluer l'échantillon de données pour project jfreechart,
       donc c'est une étude de cas.\\
-      l’hypothèse selon laquelle les classes qui ont été modifiées plus de 10 fois sont mieux
+      L’hypothèse selon laquelle les classes qui ont été modifiées plus de 10 fois sont mieux
    commentées que celles qui ont été modifiées moins de 10 fois. \\
       Des variables:
        On peut utiliser est le DCP car la dictribution de DCP est plus équilibré
@@ -109,13 +109,13 @@ informations pertinentes et décrivez les distributions.}
       \begin{center}
          \includegraphics[width=1\columnwidth]{T2.png}
          \end{center}
-      On peut voir que la moyen de DCP des classes qui ont été modifiées 
+      On peut voir que la moyenne de DCP des classes qui ont été modifiées 
       moins de 10 fois est plus grand que celles qui ont été modifiées plus de 10 fois. \\
       Donc l’hypothèse pour ce cas n'est pas vraie.\\
       
-      la nombre de classes dans groupe de moins de 10 fois est 524. \\
-      la nombre de classes dans groupe de plus de 10 fois est 138. \\
-      Tous les deux groupes sont suffisamment grands (>30) donc comparer la moyenne de DCP est bon. 
+      Le nombre de classes dans le groupe de moins de 10 fois est de 524. \\
+      Le nombre de classes dans le groupe de plus de 10 fois est de 138. \\
+      Les deux groupes sont suffisamment grands (>30), donc comparer la moyenne de DCP est bon. 
    
       }
    
