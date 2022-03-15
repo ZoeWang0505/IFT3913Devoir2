@@ -63,8 +63,13 @@ informations pertinentes et décrivez les distributions.}
 	\includegraphics[width=1\columnwidth]{T1.png}
    \end{center}
 
+   \begin{center}
+      \includegraphics[width=0.6\columnwidth]{T1.1.png}
+      \end{center}
+
    Pour chaque métrique:\\
    NCLOC : nombre de lignes de code qui ne sont pas ni vides ni commentaires \\
+
    On peut voir qu'il y a beaucoup de points en-dehors du maximum (Potential Outliers). 
    Donc la distributions est asymétrique à gauche.\\
    
@@ -139,14 +144,17 @@ informations pertinentes et décrivez les distributions.}
          \includegraphics[width=1\columnwidth]{T3.png}
          \end{center}
          La corrélation entre NCLOC et WMC:\\
+         L'équation linéaire est : y = 2.4864 + 0.2504*x, correlation entre les deux est 0.9596547.\\
          On peut voir que la corrélation est forte,linéaire et positive, 
          il n’y pas de point de biais, car plus de code de logique, plus de complexité.\\
          
          La corrélation entre DCP et WMC:\\
+         L'équation linéaire est : y = 126.477 -1.381*x, correlation entre les deux est -0.3936666.\\
          La corrélation est négative, mais pas si forte, car il y a beaucoup de points de biais, donc la corrélation n’est pas significativement  linéaire.
          La raison est que DCP est en pourcentage.\\
 
          La corrélation entre NOCom et WMC:\\
+         L'équation linéaire est : y = -20.008 + 8.724*x, correlation entre les deux est 0.6626955\\
          On peut voir que la corrélation est forte,linéaire et positive, 
          il y a quelques points de biais, mais la  plupart est autour de la droite, 
          car plus de code de logique sont ajoutés, plus de complexité.\\
